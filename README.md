@@ -1,12 +1,21 @@
-# React + Vite
+# 🛍️ CreaTuLanding1-Merlo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Proyecto: Kawaii Plush Store
+Entrega 1 del curso de React.  
+Este proyecto es la base de un e-commerce creado con **React + Vite**.
 
-Currently, two official plugins are available:
+### 🔹 Componentes incluidos
+- **NavBar** → contiene el logo, enlaces de navegación y el carrito de compras.  
+- **CartWidget** → se renderiza dentro del NavBar.  
+- **ItemListContainer** → recibe un **prop** con un mensaje de bienvenida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Cómo usar el proyecto
+1. Clonar este repositorio:
+   ```bash
+   git clone https://github.com/Evelynmerlo93/CreaTuLanding1-Merlo.git
+2. Ejecutar Bash : npm install
+3. Ejecutar modo desarrollo: npm run dev
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   Autora
+   Evelyn Merlo
