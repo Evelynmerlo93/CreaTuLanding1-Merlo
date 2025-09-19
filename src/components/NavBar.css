@@ -1,0 +1,16 @@
+.navbar {
+    width: 100%; /* Ajusta el ancho para que ocupe todo el espacio */
+    height: 100%; /* Ahora la altura será del 100% */
+    background-color: #ffb6c1;
+    display: flex;
+    flex-direction: column; /* Esto es clave, hace que los elementos se apilen verticalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}

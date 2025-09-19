@@ -1,0 +1,21 @@
+/* index.css */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fdf6f9; /* fondo pastel */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Quita scrollbar innecesario */
+body {
+  overflow-x: hidden;
+}
+
+/* Opcional: estilos globales para texto */
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}

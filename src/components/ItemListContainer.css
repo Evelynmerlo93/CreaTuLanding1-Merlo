@@ -1,0 +1,25 @@
+.item-list-container {
+  text-align: center;
+  background-color: #ffe4e1;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.item-list-greeting {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.item-list-text {
+  font-size: 18px;
+}
+
+.item-list-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8c87ca;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
