@@ -1,43 +1,59 @@
+import { NavLink, Link } from "react-router-dom";
+import { products } from "../data/products"; // ajusta la ruta si es distinta
 import CartWidget from "./CartWidget";
 
 export default function NavBar() {
+  // Creamos un array de categorías únicas
+  const categories = [...new Set(products.map((p) => p.category))];
+
   return (
     <nav
       style={{
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "15px 30px",
-        background: "linear-gradient(90deg, #ffb6c1, #ff69b4)",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+        padding: "10px 20px",
+        backgroundColor: "#ffb6c1",
       }}
     >
-      {/* Logo */}
-      <div style={{ fontWeight: "bold", fontSize: "24px", color: "#fff" }}>
-        🌸 Kawaii Plush 🧸
-      </div>
-
-      {/* Enlaces de navegación */}
-      <div
+      <Link
+        to="/"
         style={{
-          display: "flex",
-          gap: "20px",
-          fontSize: "18px",
+          fontWeight: "bold",
+          fontSize: "20px",
+          color: "#fff",
+          textDecoration: "none",
         }}
       >
-        <a href="#" style={{ textDecoration: "none", color: "#fff" }}>
-          Inicio
-        </a>
-        <a href="#" style={{ textDecoration: "none", color: "#fff" }}>
-          Productos
-        </a>
-        <a href="#" style={{ textDecoration: "none", color: "#fff" }}>
-          Contacto
-        </a>
-      </div>
+        Kawaii Plush
+      </Link>
 
-      {/* Carrito */}
-      <CartWidget count={3} />
+      {/* Menú dinámico */}
+      <ul
+        style={{
+          listStyle: "none",
+          display: "flex",
+          gap: "15px",
+          margin: 0,
+        }}
+      >
+        {categories.map((cat) => (
+          <li key={cat}>
+            <NavLink
+              to={`/category/${cat}`}
+              style={({ isActive }) => ({
+                color: isActive ? "#000" : "#fff",
+                textDecoration: "none",
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
+              {cat}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+
+      <CartWidget />
     </nav>
   );
 }
