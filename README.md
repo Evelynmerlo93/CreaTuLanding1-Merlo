@@ -1,5 +1,5 @@
-🎥 Demostración del Proyecto:
+## 👾 Demostración del Proyecto:
 
 Mira el funcionamiento a continuación:
 
-![Demostración de la landing page](assets/Demo.gif)
+![Vista previa del proyecto](assets/Demo.gif)
